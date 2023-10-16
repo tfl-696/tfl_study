@@ -108,3 +108,7 @@ Rigidbody（刚体）
 - 常用参数：Gravity（物体受到的重力大小）、Constrains：锁定位移/旋转、Material：控制弹力与摩擦
 
 事件函数
+
+---
+
+![](C:\Users\唐飞龙\AppData\Roaming\marktext\images\2023-10-11-22-37-59-image.png)
