@@ -50,18 +50,22 @@
    
    <img src="https://cdn.xiaolincoding.com/gh/xiaolincoder/ImageHost4/%E7%BD%91%E7%BB%9C/%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81%E8%AE%A1%E7%AE%97%E5%99%A8.png" title="" alt="子网掩码计算器" width="340">
 
-### 网络接口层（真正地传输数据）
+### 网络接口层（数据链路层+物理层）
 
 1. 网络接口层负责链路上的数据传输，即直接相连的设备间的数据传输，网络接口层在 IP 头部的前面加上 MAC 头部，并封装成数据帧发送到网络上，MAC头部包含了接收方和发送方的 MAC 地址等信息，我们可以通过 ARP 协议获取对方的 MAC 地址。
 
 2. 为啥要使用MAC地址？因为数据要真正的传输是需要借助物理硬件（网卡）来收发数据的，而MAC地址正是用来标识网卡之类的物理硬件的，以便区分局域网内各个网卡。
 
----
-
-应用层的数据包-->传输层的数据包-->网络层的数据包-->网络接口层的数据包
-
-![](https://cdn.xiaolincoding.com/gh/xiaolincoder/ImageHost/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%94%AE%E5%85%A5%E7%BD%91%E5%9D%80%E8%BF%87%E7%A8%8B/12.jpg)
+3. **以太网是啥？**以太网是一种让局域网内的设备能够通信的技术，例如电脑上的以太网接口，Wi-Fi接口，交换机，路由器上的千兆、万兆接口，还有网线，这些都是实现局域网通信的技术的组成部分。
 
 ---
+
+### 各层数据包
 
 ![](C:\Users\唐飞龙\AppData\Roaming\marktext\images\2023-10-11-21-04-34-image.png)
+
+---
+
+### 各层数据包的具体样子
+
+![](https://cdn.xiaolincoding.com/gh/xiaolincoder/ImageHost/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%94%AE%E5%85%A5%E7%BD%91%E5%9D%80%E8%BF%87%E7%A8%8B/12.jpg)
